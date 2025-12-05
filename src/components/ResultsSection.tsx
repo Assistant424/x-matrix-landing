@@ -1,31 +1,9 @@
-import { useState } from "react";
-
 const ResultsSection = () => {
   const stats = [
-    { value: "327%", label: "Avg. ROAS" },
-    { value: "$127M", label: "Revenue Driven" },
-    { value: "48", label: "Brands Scaled" },
+    { value: "327%", label: "Avg. ROAS", description: "Return on ad spend" },
+    { value: "$127M", label: "Revenue Driven", description: "For our clients" },
+    { value: "48", label: "Brands Scaled", description: "And counting" },
   ];
-
-  const caseStudies = [
-    {
-      brand: "TechFlow",
-      result: "+312% Revenue Growth",
-      category: "SaaS",
-    },
-    {
-      brand: "Luxe Beauty",
-      result: "5.2x ROAS",
-      category: "E-Commerce",
-    },
-    {
-      brand: "FinanceHub",
-      result: "$47M in Pipeline",
-      category: "FinTech",
-    },
-  ];
-
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <section id="results" className="py-24 bg-navy-dark grid-bg">
@@ -35,72 +13,45 @@ const ResultsSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Proven <span className="text-gradient-gold">Results</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
-            Numbers that speak louder than words.
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Numbers that speak louder than words. Every metric represents real growth for real brands.
           </p>
         </div>
 
-        {/* Stats */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
+        {/* Stats Grid */}
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="text-center p-8 rounded-2xl card-gradient border border-border hover:border-primary/30 transition-all duration-300"
+              className="text-center p-10 rounded-2xl card-gradient border border-border hover:border-primary/30 transition-all duration-300 group"
             >
-              <div className="text-5xl md:text-6xl font-black text-gradient-gold mb-2">
+              <div className="text-6xl md:text-7xl font-black text-gradient-gold mb-3 group-hover:scale-105 transition-transform duration-300">
                 {stat.value}
               </div>
-              <div className="text-muted-foreground font-medium">
+              <div className="text-xl font-semibold text-foreground mb-1">
                 {stat.label}
+              </div>
+              <div className="text-muted-foreground text-sm">
+                {stat.description}
               </div>
             </div>
           ))}
         </div>
 
-        {/* Case Studies Grid */}
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {caseStudies.map((study, index) => (
-            <div
-              key={index}
-              className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer"
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
-            >
-              {/* Background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-secondary to-navy-dark" />
-              
-              {/* Grid pattern */}
-              <div className="absolute inset-0 grid-bg opacity-50" />
-
-              {/* Content */}
-              <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                <div
-                  className={`transition-all duration-500 ${
-                    hoveredIndex === index
-                      ? "translate-y-0 opacity-100"
-                      : "translate-y-4 opacity-70"
-                  }`}
-                >
-                  <span className="text-xs text-primary font-semibold uppercase tracking-wider">
-                    {study.category}
-                  </span>
-                  <h3 className="text-2xl font-bold text-foreground mt-1">
-                    {study.brand}
-                  </h3>
-                  <p className="text-primary font-semibold mt-2">
-                    {study.result}
-                  </p>
-                </div>
-              </div>
-
-              {/* Hover overlay */}
-              <div
-                className={`absolute inset-0 bg-primary/10 transition-opacity duration-300 ${
-                  hoveredIndex === index ? "opacity-100" : "opacity-0"
-                }`}
-              />
-            </div>
-          ))}
+        {/* Bottom CTA */}
+        <div className="text-center mt-16">
+          <p className="text-muted-foreground mb-6">
+            Ready to see similar results for your brand?
+          </p>
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-semibold transition-colors"
+          >
+            Let's talk numbers
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
