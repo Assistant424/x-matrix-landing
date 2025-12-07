@@ -4,33 +4,33 @@ const AboutSection = () => {
   const highlights = [
     {
       icon: Target,
-      title: "Obsessive ROI Focus",
-      description: "Every dollar tracked and optimized for maximum return.",
+      title: "ROI Obsessed",
+      description: "Every dollar tracked for maximum return.",
     },
     {
       icon: Zap,
-      title: "Speed & Precision",
-      description: "Rapid iteration with data-backed decisions.",
+      title: "Fast & Data-Driven",
+      description: "Quick iterations backed by real data.",
     },
     {
       icon: Users,
-      title: "Elite Talent",
-      description: "Ex-Google & Meta growth leaders on your team.",
+      title: "Dedicated Team",
+      description: "Your success is our only focus.",
     },
     {
       icon: TrendingUp,
-      title: "Proven Frameworks",
-      description: "Tested across $50M+ in ad spend.",
+      title: "Growth Focused",
+      description: "Strategies built for scaling.",
     },
     {
       icon: Shield,
       title: "Full Transparency",
-      description: "Real-time dashboards and complete data access.",
+      description: "Real-time dashboards and reports.",
     },
     {
       icon: Award,
-      title: "Results Guaranteed",
-      description: "Performance-based pricing options available.",
+      title: "Results First",
+      description: "We don't win until you win.",
     },
   ];
 
@@ -39,72 +39,93 @@ const AboutSection = () => {
       {/* Background Effects */}
       <div className="absolute inset-0 grid-bg opacity-30" />
       <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-primary/5 blur-[150px] rounded-full -translate-y-1/2" />
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-primary/3 blur-[120px] rounded-full" />
       
       <div className="relative container mx-auto px-6">
-        {/* Section Header */}
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 text-primary text-sm font-medium mb-6">
-            <Award className="w-4 h-4" />
-            Why Choose Us
-          </div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Built for <span className="text-gradient-gold">Winners</span>
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-            Founded by ex-Google and Meta growth leaders who bridge the gap between 
-            agencies that promise and agencies that deliver.
-          </p>
-        </div>
-
-        {/* Main Content */}
-        <div className="max-w-6xl mx-auto">
-          {/* Stats Row */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-            {[
-              { value: "12+", label: "Years Experience" },
-              { value: "98%", label: "Client Retention" },
-              { value: "$50M+", label: "Ad Spend Managed" },
-              { value: "100+", label: "Campaigns Launched" },
-            ].map((stat, index) => (
-              <div 
-                key={index}
-                className="text-center p-6 rounded-2xl bg-gradient-to-br from-secondary/50 to-secondary/20 border border-border hover:border-primary/30 transition-all duration-300 group"
-              >
-                <div className="text-3xl md:text-4xl font-black text-gradient-gold mb-2 group-hover:scale-105 transition-transform">
-                  {stat.value}
-                </div>
-                <div className="text-muted-foreground text-sm">{stat.label}</div>
+        <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
+          
+          {/* Left Side - Visual Element */}
+          <div className="relative order-2 lg:order-1">
+            {/* Animated Visual Grid */}
+            <div className="relative aspect-square max-w-md mx-auto">
+              {/* Outer Ring */}
+              <div className="absolute inset-0 rounded-full border border-primary/20 animate-pulse-slow" />
+              <div className="absolute inset-4 rounded-full border border-primary/30 animate-pulse-slow animation-delay-200" />
+              <div className="absolute inset-8 rounded-full border border-primary/40 animate-pulse-slow animation-delay-400" />
+              
+              {/* Center Glow */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-40 h-40 rounded-full bg-gradient-to-br from-primary/30 to-primary/5 blur-xl animate-pulse-slow" />
               </div>
-            ))}
-          </div>
-
-          {/* Highlights Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {highlights.map((item, index) => (
-              <div 
-                key={index} 
-                className="group p-6 rounded-2xl bg-gradient-to-br from-secondary/40 to-transparent border border-border hover:border-primary/40 transition-all duration-500 hover:shadow-[0_0_40px_rgba(240,191,0,0.1)]"
-              >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
-                  <item.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h4 className="font-bold text-foreground mb-2 text-lg">
-                  {item.title}
-                </h4>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {item.description}
-                </p>
+              
+              {/* Floating Icons */}
+              <div className="absolute top-8 left-1/2 -translate-x-1/2 w-14 h-14 rounded-2xl bg-secondary/80 border border-primary/30 flex items-center justify-center animate-float">
+                <TrendingUp className="w-7 h-7 text-primary" />
               </div>
-            ))}
+              <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-14 h-14 rounded-2xl bg-secondary/80 border border-primary/30 flex items-center justify-center animate-float animation-delay-300">
+                <Award className="w-7 h-7 text-primary" />
+              </div>
+              <div className="absolute top-1/2 left-8 -translate-y-1/2 w-14 h-14 rounded-2xl bg-secondary/80 border border-primary/30 flex items-center justify-center animate-float animation-delay-200">
+                <Target className="w-7 h-7 text-primary" />
+              </div>
+              <div className="absolute top-1/2 right-8 -translate-y-1/2 w-14 h-14 rounded-2xl bg-secondary/80 border border-primary/30 flex items-center justify-center animate-float animation-delay-400">
+                <Zap className="w-7 h-7 text-primary" />
+              </div>
+              
+              {/* Center Logo */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center shadow-[0_0_60px_rgba(240,191,0,0.3)]">
+                  <span className="text-4xl font-black text-background">X</span>
+                </div>
+              </div>
+              
+              {/* Decorative Lines */}
+              <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 400">
+                <line x1="200" y1="60" x2="200" y2="140" stroke="hsl(var(--primary))" strokeOpacity="0.3" strokeWidth="1" strokeDasharray="4 4" />
+                <line x1="200" y1="260" x2="200" y2="340" stroke="hsl(var(--primary))" strokeOpacity="0.3" strokeWidth="1" strokeDasharray="4 4" />
+                <line x1="60" y1="200" x2="140" y2="200" stroke="hsl(var(--primary))" strokeOpacity="0.3" strokeWidth="1" strokeDasharray="4 4" />
+                <line x1="260" y1="200" x2="340" y2="200" stroke="hsl(var(--primary))" strokeOpacity="0.3" strokeWidth="1" strokeDasharray="4 4" />
+              </svg>
+            </div>
           </div>
 
-          {/* Bottom Quote */}
-          <div className="mt-16 text-center">
-            <blockquote className="text-xl md:text-2xl font-medium text-foreground/90 italic max-w-3xl mx-auto">
-              "We don't hide behind vanity metrics. Every campaign is engineered for one thing: 
-              <span className="text-primary not-italic font-bold"> profitable growth</span>."
-            </blockquote>
+          {/* Right Side - Content */}
+          <div className="order-1 lg:order-2">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 text-primary text-sm font-medium mb-6">
+              <Award className="w-4 h-4" />
+              Why Choose Us
+            </div>
+            
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Built for <span className="text-gradient-gold">Winners</span>
+            </h2>
+            
+            <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
+              We're not your typical agency. We obsess over ROI because your success 
+              is our reputation. No vanity metrics, no complicated reports—just 
+              <span className="text-foreground font-semibold"> profitable growth</span>.
+            </p>
+
+            {/* Highlights Grid */}
+            <div className="grid sm:grid-cols-2 gap-4">
+              {highlights.map((item, index) => (
+                <div 
+                  key={index} 
+                  className="group flex items-start gap-4 p-4 rounded-xl bg-secondary/30 border border-border hover:border-primary/40 transition-all duration-300"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <item.icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-foreground mb-1">
+                      {item.title}
+                    </h4>
+                    <p className="text-muted-foreground text-sm">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
