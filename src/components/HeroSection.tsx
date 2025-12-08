@@ -39,9 +39,9 @@ const HeroSection = () => {
 
       <div className="relative z-10 container mx-auto px-6 text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary/30 bg-primary/5 backdrop-blur-sm mb-8 animate-fade-up group hover:border-primary/50 transition-colors cursor-default">
-          <Sparkles className="w-4 h-4 text-primary animate-pulse" />
-          <span className="text-sm text-muted-foreground">
+        <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/30 bg-primary/5 backdrop-blur-sm mb-8 animate-fade-up group hover:border-primary/50 transition-colors cursor-default">
+          <Sparkles className="w-4 h-4 text-primary animate-pulse flex-shrink-0" />
+          <span className="text-sm text-muted-foreground whitespace-nowrap">
             Now accepting new clients for Q1 2025
           </span>
         </div>
@@ -84,9 +84,9 @@ const HeroSection = () => {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex justify-center pt-2">
-            <div className="w-1 h-3 bg-primary rounded-full animate-pulse" />
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
+          <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex justify-center pt-2 animate-scroll-hint">
+            <div className="w-1 h-3 bg-primary rounded-full animate-scroll-dot" />
           </div>
         </div>
       </div>

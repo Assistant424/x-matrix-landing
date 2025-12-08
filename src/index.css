@@ -120,6 +120,30 @@
     animation: float 6s ease-in-out infinite;
   }
 
+  .animate-float-top {
+    animation: floatTop 5s ease-in-out infinite;
+  }
+
+  .animate-float-bottom {
+    animation: floatBottom 5s ease-in-out infinite 0.5s;
+  }
+
+  .animate-float-left {
+    animation: floatLeft 5s ease-in-out infinite 0.25s;
+  }
+
+  .animate-float-right {
+    animation: floatRight 5s ease-in-out infinite 0.75s;
+  }
+
+  .animate-scroll-hint {
+    animation: scrollHint 2s ease-in-out infinite;
+  }
+
+  .animate-scroll-dot {
+    animation: scrollDot 1.5s ease-in-out infinite;
+  }
+
   .animate-pulse-glow {
     animation: pulseGlow 2s ease-in-out infinite;
   }
@@ -176,6 +200,36 @@
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
+}
+
+@keyframes floatTop {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-10px); }
+}
+
+@keyframes floatBottom {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(10px); }
+}
+
+@keyframes floatLeft {
+  0%, 100% { transform: translateY(-50%) translateX(0); }
+  50% { transform: translateY(-50%) translateX(-10px); }
+}
+
+@keyframes floatRight {
+  0%, 100% { transform: translateY(-50%) translateX(0); }
+  50% { transform: translateY(-50%) translateX(10px); }
+}
+
+@keyframes scrollHint {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(8px); opacity: 0.6; }
+}
+
+@keyframes scrollDot {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(8px); opacity: 0; }
 }
 
 @keyframes pulseGlow {
