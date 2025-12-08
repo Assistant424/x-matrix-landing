@@ -58,16 +58,16 @@ const AboutSection = () => {
               </div>
               
               {/* Floating Icons */}
-              <div className="absolute top-8 left-1/2 -translate-x-1/2 w-14 h-14 rounded-2xl bg-secondary/80 border border-primary/30 flex items-center justify-center animate-float">
+              <div className="absolute top-8 left-1/2 w-14 h-14 rounded-2xl bg-secondary/80 border border-primary/30 flex items-center justify-center animate-float-top">
                 <TrendingUp className="w-7 h-7 text-primary" />
               </div>
-              <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-14 h-14 rounded-2xl bg-secondary/80 border border-primary/30 flex items-center justify-center animate-float animation-delay-300">
+              <div className="absolute bottom-8 left-1/2 w-14 h-14 rounded-2xl bg-secondary/80 border border-primary/30 flex items-center justify-center animate-float-bottom">
                 <Award className="w-7 h-7 text-primary" />
               </div>
-              <div className="absolute top-1/2 left-8 -translate-y-1/2 w-14 h-14 rounded-2xl bg-secondary/80 border border-primary/30 flex items-center justify-center animate-float animation-delay-200">
+              <div className="absolute top-1/2 left-8 w-14 h-14 rounded-2xl bg-secondary/80 border border-primary/30 flex items-center justify-center animate-float-left">
                 <Target className="w-7 h-7 text-primary" />
               </div>
-              <div className="absolute top-1/2 right-8 -translate-y-1/2 w-14 h-14 rounded-2xl bg-secondary/80 border border-primary/30 flex items-center justify-center animate-float animation-delay-400">
+              <div className="absolute top-1/2 right-8 w-14 h-14 rounded-2xl bg-secondary/80 border border-primary/30 flex items-center justify-center animate-float-right">
                 <Zap className="w-7 h-7 text-primary" />
               </div>
               
