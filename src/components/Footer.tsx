@@ -21,7 +21,7 @@ const Footer = () => {
           {/* Brand */}
           <a href="#home" className="flex items-center gap-1 text-2xl font-bold">
             <span className="text-primary text-3xl">X</span>
-            <span className="text-foreground tracking-tight">MATRIX</span>
+            <span className="text-foreground tracking-tight">Matrics</span>
           </a>
 
           {/* Links */}
@@ -54,7 +54,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <span>© 2025 X Matrix. All rights reserved.</span>
+          <span>© 2025 X Matrics. All rights reserved.</span>
           <div className="flex items-center gap-6">
             <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
             <a href="#" className="hover:text-foreground transition-colors">Terms</a>
