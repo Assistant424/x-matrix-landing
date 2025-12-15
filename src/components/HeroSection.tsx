@@ -57,7 +57,7 @@ const HeroSection = () => {
 
         {/* Subheadline */}
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 animate-fade-up animation-delay-200 leading-relaxed">
-          X Matrix is the growth engine for ambitious brands. 
+          X Matrics is the growth engine for ambitious brands. 
           <span className="text-foreground font-medium"> Performance marketing × creative excellence × AI-powered strategy.</span>
         </p>
 
