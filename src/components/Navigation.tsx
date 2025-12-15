@@ -35,7 +35,7 @@ const Navigation = () => {
           {/* Logo */}
           <a href="#home" className="flex items-center gap-1 text-2xl font-bold">
             <span className="text-primary text-3xl">X</span>
-            <span className="text-foreground tracking-tight">MATRIX</span>
+            <span className="text-foreground tracking-tight">Matrics</span>
           </a>
 
           {/* Desktop Navigation */}
