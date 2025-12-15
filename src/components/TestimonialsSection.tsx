@@ -4,7 +4,7 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       quote:
-        "X Matrix transformed our digital presence. We went from struggling to hit targets to consistently exceeding them by 200%+.",
+        "X Matrics transformed our digital presence. We went from struggling to hit targets to consistently exceeding them by 200%+.",
       author: "Sarah Chen",
       role: "CMO, TechFlow",
       metric: "+312% Revenue",
