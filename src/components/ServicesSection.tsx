@@ -6,28 +6,28 @@ const ServicesSection = () => {
       icon: Rocket,
       title: "Performance Marketing",
       description:
-        "Turn ad spend into predictable revenue. We manage Meta, Google, and TikTok campaigns that scale profitably.",
+        "Stop guessing where your ad dollars go. We build and manage campaigns across Meta, Google, and TikTok that turn spend into measurable revenue.",
       color: "from-orange-500/20 to-orange-500/5",
     },
     {
       icon: Lightbulb,
       title: "Creative & Branding",
       description:
-        "High-converting ads that stop the scroll. Creative testing systems that find winners fast and scale them.",
+        "Ads that actually convert. We test dozens of creatives monthly to find what makes your audience click, buy, and come back.",
       color: "from-blue-500/20 to-blue-500/5",
     },
     {
       icon: TrendingUp,
       title: "SEO & Content Strategy",
       description:
-        "Reduce CAC with organic traffic that compounds. Build authority and capture demand without paying per click.",
+        "Lower your customer acquisition cost with organic traffic. We build content systems that generate leads without paying per click.",
       color: "from-green-500/20 to-green-500/5",
     },
     {
       icon: Brain,
       title: "AI-Powered Optimization",
       description:
-        "Real-time bid management and audience targeting that improves ROAS while you sleep.",
+        "Automated bid adjustments and audience targeting that improve your return on ad spend 24/7—no manual babysitting required.",
       color: "from-purple-500/20 to-purple-500/5",
     },
   ];

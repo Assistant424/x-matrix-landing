@@ -35,7 +35,7 @@ const ResultsSection = () => {
             Proven <span className="text-gradient-gold">Results</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Numbers that speak louder than words
+            Real client outcomes across ecommerce, SaaS, and B2B—measured over 24 months
           </p>
         </div>
 

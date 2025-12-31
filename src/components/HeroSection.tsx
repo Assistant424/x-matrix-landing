@@ -42,7 +42,7 @@ const HeroSection = () => {
         <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/30 bg-primary/5 backdrop-blur-sm mb-8 animate-fade-up group hover:border-primary/50 transition-colors cursor-default">
           <Sparkles className="w-4 h-4 text-primary animate-pulse flex-shrink-0" />
           <span className="text-sm text-muted-foreground whitespace-nowrap">
-            For brands spending $25k+/mo on ads
+            For DTC & B2B brands spending $25k+/mo on ads
           </span>
         </div>
 
@@ -57,8 +57,8 @@ const HeroSection = () => {
 
         {/* Subheadline */}
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 animate-fade-up animation-delay-200 leading-relaxed">
-          We build paid acquisition systems for serious DTC and B2B brands.
-          <span className="text-foreground font-medium"> Data-driven strategy. Relentless optimization. Measurable ROI.</span>
+          We build paid acquisition systems for growth-stage DTC and B2B brands ready to scale profitably.
+          <span className="text-foreground font-medium"> Not tactics. Systems that compound.</span>
         </p>
 
         {/* CTA Buttons */}
