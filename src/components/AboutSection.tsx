@@ -5,32 +5,32 @@ const AboutSection = () => {
     {
       icon: Target,
       title: "ROI Obsessed",
-      description: "We track every dollar so you know exactly what's working.",
+      description: "Every dollar tracked. Every result tied to revenue.",
     },
     {
       icon: Zap,
       title: "Fast Iteration",
-      description: "Weekly tests, not monthly reports. Speed wins.",
+      description: "Weekly tests, not quarterly reviews. Speed compounds.",
     },
     {
       icon: Users,
       title: "Senior Team Only",
-      description: "No junior account managers. Direct access to strategists.",
+      description: "You talk to strategists, not account coordinators.",
     },
     {
       icon: TrendingUp,
-      title: "Systems, Not Tactics",
-      description: "Repeatable processes that scale with your business.",
+      title: "Systems, Not Hacks",
+      description: "Repeatable growth processes that outlast any campaign.",
     },
     {
       icon: Shield,
       title: "Full Visibility",
-      description: "Real-time dashboards. No hidden metrics or surprises.",
+      description: "See what we see. No hidden dashboards or vanity metrics.",
     },
     {
       icon: Award,
-      title: "Performance-Aligned",
-      description: "Our success is tied to your revenue growth.",
+      title: "Skin in the Game",
+      description: "We grow when you grow. Aligned incentives, always.",
     },
   ];
 
@@ -100,9 +100,9 @@ const AboutSection = () => {
             </h2>
             
             <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
-              We're not here to impress you with dashboards. We're here to make you money. 
-              Our team builds growth systems—not one-off campaigns—so your revenue scales 
-              <span className="text-foreground font-semibold"> predictably, month after month</span>.
+              We think like operators, not vendors. Our job isn't to run ads—it's to build 
+              repeatable systems that make your revenue 
+              <span className="text-foreground font-semibold"> predictable and your growth sustainable</span>.
             </p>
 
             {/* Highlights Grid */}

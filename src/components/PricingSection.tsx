@@ -8,7 +8,7 @@ const PricingSection = () => {
       price: "$4,900",
       period: "/mo",
       description: "For brands spending $25k–$50k/mo on ads",
-      whoIsFor: "Ideal for: Established DTC brands ready to professionalize paid acquisition",
+      whoIsFor: "Best for: Profitable brands ready to systematize paid acquisition and stop guessing",
       features: [
         "Up to $50k ad spend management",
         "2 advertising platforms",
@@ -26,7 +26,7 @@ const PricingSection = () => {
       price: "$9,900",
       period: "/mo",
       description: "For brands spending $50k–$200k/mo on ads",
-      whoIsFor: "Ideal for: Scaling brands that need full-funnel optimization and fast iteration",
+      whoIsFor: "Best for: Growth-stage brands scaling aggressively and need a full-funnel partner",
       features: [
         "Up to $200k ad spend management",
         "All advertising platforms",
@@ -46,7 +46,7 @@ const PricingSection = () => {
       price: "Custom",
       period: "",
       description: "For brands spending $200k+/mo on ads",
-      whoIsFor: "Ideal for: Multi-brand portfolios and high-growth companies with complex funnels",
+      whoIsFor: "Best for: Multi-brand operators or Series B+ companies with complex attribution needs",
       features: [
         "Unlimited ad spend management",
         "Omni-channel strategy",

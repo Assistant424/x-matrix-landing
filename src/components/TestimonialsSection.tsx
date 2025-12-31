@@ -7,31 +7,31 @@ const TestimonialsSection = () => {
         "X Matrics took us from $80k to $340k/mo in revenue in under 6 months. Their systematic approach to creative testing was the unlock.",
       author: "Sarah Chen",
       role: "CMO, TechFlow",
-      context: "B2B SaaS • Series A",
+      context: "B2B SaaS • Series A • $75k/mo ad spend",
       metric: "+312% Revenue",
     },
     {
       quote:
         "We tried 3 agencies before X Matrics. They're the first team that actually understood unit economics and scaled us profitably.",
       author: "Marcus Rodriguez",
-      role: "Founder, Luxe Beauty",
-      context: "DTC Skincare • $2M ARR",
+      role: "Founder & CEO",
+      context: "DTC Skincare • $2M ARR • 12-person team",
       metric: "5.2x ROAS",
     },
     {
       quote:
         "They don't just run ads—they built a repeatable system. Our cost per lead dropped 40% while volume doubled.",
       author: "Jennifer Walsh",
-      role: "VP Marketing, FinanceHub",
-      context: "B2B Fintech • 50 employees",
+      role: "VP Marketing",
+      context: "B2B Fintech • Series B • $120k/mo ad spend",
       metric: "$47M Pipeline",
     },
     {
       quote:
         "Finally an agency that treats our ad spend like their own money. We hit profitability targets in month 2.",
       author: "David Kim",
-      role: "CEO, ScaleUp Labs",
-      context: "DTC Health • $5M ARR",
+      role: "CEO & Co-founder",
+      context: "DTC Health Supplements • $5M ARR",
       metric: "4.8x ROAS",
     },
   ];
