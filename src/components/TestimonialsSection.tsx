@@ -4,30 +4,34 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       quote:
-        "X Matrics transformed our digital presence. We went from struggling to hit targets to consistently exceeding them by 200%+.",
+        "X Matrics took us from $80k to $340k/mo in revenue in under 6 months. Their systematic approach to creative testing was the unlock.",
       author: "Sarah Chen",
       role: "CMO, TechFlow",
+      context: "B2B SaaS • Series A",
       metric: "+312% Revenue",
     },
     {
       quote:
-        "The team's data-driven approach and creative excellence is unmatched. Best agency decision we've ever made.",
+        "We tried 3 agencies before X Matrics. They're the first team that actually understood unit economics and scaled us profitably.",
       author: "Marcus Rodriguez",
       role: "Founder, Luxe Beauty",
+      context: "DTC Skincare • $2M ARR",
       metric: "5.2x ROAS",
     },
     {
       quote:
-        "They don't just run ads – they build growth engines. Our pipeline has never been healthier.",
+        "They don't just run ads—they built a repeatable system. Our cost per lead dropped 40% while volume doubled.",
       author: "Jennifer Walsh",
       role: "VP Marketing, FinanceHub",
+      context: "B2B Fintech • 50 employees",
       metric: "$47M Pipeline",
     },
     {
       quote:
-        "Finally an agency that actually delivers on their promises. The ROI speaks for itself.",
+        "Finally an agency that treats our ad spend like their own money. We hit profitability targets in month 2.",
       author: "David Kim",
       role: "CEO, ScaleUp Labs",
+      context: "DTC Health • $5M ARR",
       metric: "4.8x ROAS",
     },
   ];
@@ -75,6 +79,9 @@ const TestimonialsSection = () => {
                   </div>
                   <div className="text-sm text-muted-foreground">
                     {testimonial.role}
+                  </div>
+                  <div className="text-xs text-muted-foreground/70 mt-0.5">
+                    {testimonial.context}
                   </div>
                 </div>
                 <div className="text-right">

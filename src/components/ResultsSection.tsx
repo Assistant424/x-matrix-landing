@@ -6,19 +6,19 @@ const ResultsSection = () => {
       icon: TrendingUp,
       value: "327%", 
       label: "Avg. ROAS", 
-      description: "Return on ad spend" 
+      description: "Across DTC & B2B clients" 
     },
     { 
       icon: DollarSign,
       value: "$127M", 
       label: "Revenue Driven", 
-      description: "For our clients" 
+      description: "In the last 24 months" 
     },
     { 
       icon: Building2,
       value: "48", 
       label: "Brands Scaled", 
-      description: "And counting" 
+      description: "From $50k to $500k+/mo" 
     },
   ];
 

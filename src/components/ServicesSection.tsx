@@ -6,28 +6,28 @@ const ServicesSection = () => {
       icon: Rocket,
       title: "Performance Marketing",
       description:
-        "Data-driven campaigns that maximize ROI across paid search, social, and programmatic channels.",
+        "Turn ad spend into predictable revenue. We manage Meta, Google, and TikTok campaigns that scale profitably.",
       color: "from-orange-500/20 to-orange-500/5",
     },
     {
       icon: Lightbulb,
       title: "Creative & Branding",
       description:
-        "Award-winning creative that captures attention and converts browsers into believers.",
+        "High-converting ads that stop the scroll. Creative testing systems that find winners fast and scale them.",
       color: "from-blue-500/20 to-blue-500/5",
     },
     {
       icon: TrendingUp,
       title: "SEO & Content Strategy",
       description:
-        "Organic growth strategies that build lasting authority and sustainable traffic.",
+        "Reduce CAC with organic traffic that compounds. Build authority and capture demand without paying per click.",
       color: "from-green-500/20 to-green-500/5",
     },
     {
       icon: Brain,
-      title: "AI-Powered Advertising",
+      title: "AI-Powered Optimization",
       description:
-        "Machine learning optimization that finds your ideal customers at scale.",
+        "Real-time bid management and audience targeting that improves ROAS while you sleep.",
       color: "from-purple-500/20 to-purple-500/5",
     },
   ];
@@ -54,7 +54,7 @@ const ServicesSection = () => {
             <span className="text-gradient-gold">Scales</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Cutting-edge technology meets creative excellence
+            Full-funnel systems that turn clicks into customers
           </p>
         </div>
 
