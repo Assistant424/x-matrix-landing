@@ -7,7 +7,8 @@ const PricingSection = () => {
       name: "Growth Starter",
       price: "$4,900",
       period: "/mo",
-      description: "Perfect for startups ready to scale",
+      description: "For brands spending $25k–$50k/mo on ads",
+      whoIsFor: "Ideal for: Established DTC brands ready to professionalize paid acquisition",
       features: [
         "Up to $50k ad spend management",
         "2 advertising platforms",
@@ -24,7 +25,8 @@ const PricingSection = () => {
       name: "Dominance",
       price: "$9,900",
       period: "/mo",
-      description: "For brands ready to dominate their market",
+      description: "For brands spending $50k–$200k/mo on ads",
+      whoIsFor: "Ideal for: Scaling brands that need full-funnel optimization and fast iteration",
       features: [
         "Up to $200k ad spend management",
         "All advertising platforms",
@@ -43,7 +45,8 @@ const PricingSection = () => {
       name: "Enterprise",
       price: "Custom",
       period: "",
-      description: "For industry leaders with complex needs",
+      description: "For brands spending $200k+/mo on ads",
+      whoIsFor: "Ideal for: Multi-brand portfolios and high-growth companies with complex funnels",
       features: [
         "Unlimited ad spend management",
         "Omni-channel strategy",
@@ -107,6 +110,9 @@ const PricingSection = () => {
                 </div>
                 <p className="text-muted-foreground text-sm mt-2">
                   {plan.description}
+                </p>
+                <p className="text-xs text-primary/80 mt-2 font-medium">
+                  {plan.whoIsFor}
                 </p>
               </div>
 

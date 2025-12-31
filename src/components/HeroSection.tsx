@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { ArrowRight, Play, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -42,34 +42,37 @@ const HeroSection = () => {
         <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-primary/30 bg-primary/5 backdrop-blur-sm mb-8 animate-fade-up group hover:border-primary/50 transition-colors cursor-default">
           <Sparkles className="w-4 h-4 text-primary animate-pulse flex-shrink-0" />
           <span className="text-sm text-muted-foreground whitespace-nowrap">
-            Now accepting new clients for Q1 2025
+            For brands spending $25k+/mo on ads
           </span>
         </div>
 
         {/* Main Headline */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-6 animate-fade-up animation-delay-100">
-          <span className="text-foreground block">We Turn Data Into</span>
+          <span className="text-foreground block">Predictable Revenue.</span>
           <span className="text-gradient-gold relative inline-block">
-            Dominance
+            Scalable Growth.
             <span className="absolute -inset-x-6 -inset-y-2 bg-primary/10 blur-2xl -z-10 rounded-full" />
           </span>
         </h1>
 
         {/* Subheadline */}
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 animate-fade-up animation-delay-200 leading-relaxed">
-          X Matrics is the growth engine for ambitious brands. 
-          <span className="text-foreground font-medium"> Performance marketing × creative excellence × AI-powered strategy.</span>
+          We build paid acquisition systems for serious DTC and B2B brands.
+          <span className="text-foreground font-medium"> Data-driven strategy. Relentless optimization. Measurable ROI.</span>
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up animation-delay-300">
-          <Button variant="hero" size="xl" className="group">
-            Start Winning Now
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          <Button variant="hero" size="xl" className="group" asChild>
+            <a href="#contact">
+              Book Free Strategy Call
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </a>
           </Button>
-          <Button variant="heroOutline" size="xl" className="group">
-            <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-            See Our Work
+          <Button variant="heroOutline" size="xl" className="group" asChild>
+            <a href="#results">
+              See Case Studies
+            </a>
           </Button>
         </div>
 

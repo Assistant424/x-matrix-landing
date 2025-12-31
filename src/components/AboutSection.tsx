@@ -5,32 +5,32 @@ const AboutSection = () => {
     {
       icon: Target,
       title: "ROI Obsessed",
-      description: "Every dollar tracked for maximum return.",
+      description: "We track every dollar so you know exactly what's working.",
     },
     {
       icon: Zap,
-      title: "Fast & Data-Driven",
-      description: "Quick iterations backed by real data.",
+      title: "Fast Iteration",
+      description: "Weekly tests, not monthly reports. Speed wins.",
     },
     {
       icon: Users,
-      title: "Dedicated Team",
-      description: "Your success is our only focus.",
+      title: "Senior Team Only",
+      description: "No junior account managers. Direct access to strategists.",
     },
     {
       icon: TrendingUp,
-      title: "Growth Focused",
-      description: "Strategies built for scaling.",
+      title: "Systems, Not Tactics",
+      description: "Repeatable processes that scale with your business.",
     },
     {
       icon: Shield,
-      title: "Full Transparency",
-      description: "Real-time dashboards and reports.",
+      title: "Full Visibility",
+      description: "Real-time dashboards. No hidden metrics or surprises.",
     },
     {
       icon: Award,
-      title: "Results First",
-      description: "We don't win until you win.",
+      title: "Performance-Aligned",
+      description: "Our success is tied to your revenue growth.",
     },
   ];
 
@@ -100,9 +100,9 @@ const AboutSection = () => {
             </h2>
             
             <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
-              We're not your typical agency. We obsess over ROI because your success 
-              is our reputation. No vanity metrics, no complicated reports—just 
-              <span className="text-foreground font-semibold"> profitable growth</span>.
+              We're not here to impress you with dashboards. We're here to make you money. 
+              Our team builds growth systems—not one-off campaigns—so your revenue scales 
+              <span className="text-foreground font-semibold"> predictably, month after month</span>.
             </p>
 
             {/* Highlights Grid */}

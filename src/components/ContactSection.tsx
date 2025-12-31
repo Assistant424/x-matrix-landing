@@ -24,9 +24,9 @@ const ContactSection = () => {
   };
 
   const benefits = [
-    "Free strategy consultation",
-    "Custom growth roadmap",
-    "No long-term contracts",
+    "Honest funnel audit—no sales pitch",
+    "Custom growth roadmap for your business",
+    "Month-to-month. No lock-in contracts.",
   ];
 
   return (
@@ -45,13 +45,13 @@ const ContactSection = () => {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 text-primary text-sm font-medium mb-6 animate-pulse-glow">
             <Sparkles className="w-4 h-4" />
-            Limited Spots Available
+            Currently accepting 3 new clients
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-4">
-            Ready to <span className="text-gradient-gold">10x</span> Your Growth?
+            Let's Build Your <span className="text-gradient-gold">Growth System</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            15-minute call. Zero pressure. Let's build your unfair advantage.
+            15-minute strategy call. We'll review your funnel and share where we see opportunity.
           </p>
         </div>
 
