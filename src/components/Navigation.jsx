@@ -30,16 +30,16 @@ const Navigation = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-4 sm:px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-1 text-2xl font-bold">
-            <span className="text-primary text-3xl">X</span>
+          <a href="#home" className="flex items-center gap-1 text-xl sm:text-2xl font-bold">
+            <span className="text-primary text-2xl sm:text-3xl">X</span>
             <span className="text-foreground tracking-tight">Matrics</span>
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6 lg:gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -53,15 +53,16 @@ const Navigation = () => {
 
           {/* CTA Button - Desktop */}
           <div className="hidden md:block">
-            <Button variant="gold" size="sm">
-              Get Started
+            <Button variant="gold" size="sm" asChild>
+              <a href="#contact">Get Started</a>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground"
+            className="md:hidden text-foreground p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -70,7 +71,7 @@ const Navigation = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-background/98 backdrop-blur-lg border-b border-border animate-fade-in">
-            <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
+            <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
@@ -81,8 +82,8 @@ const Navigation = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="gold" className="mt-4">
-                Get Started
+              <Button variant="gold" className="mt-4" asChild>
+                <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Get Started</a>
               </Button>
             </div>
           </div>

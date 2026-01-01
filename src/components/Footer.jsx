@@ -16,16 +16,16 @@ const Footer = () => {
 
   return (
     <footer className="bg-navy-dark border-t border-border">
-      <div className="container mx-auto px-6 py-12">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+      <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8">
           {/* Brand */}
-          <a href="#home" className="flex items-center gap-1 text-2xl font-bold">
-            <span className="text-primary text-3xl">X</span>
+          <a href="#home" className="flex items-center gap-1 text-xl sm:text-2xl font-bold">
+            <span className="text-primary text-2xl sm:text-3xl">X</span>
             <span className="text-foreground tracking-tight">Matrics</span>
           </a>
 
           {/* Links */}
-          <nav className="flex items-center gap-8">
+          <nav className="flex items-center gap-4 sm:gap-8 flex-wrap justify-center">
             {links.map((link) => (
               <a
                 key={link.href}
@@ -39,21 +39,24 @@ const Footer = () => {
 
           {/* Social */}
           <div className="flex items-center gap-3">
-            {socialLinks.map((social) => (
-              <a
-                key={social.label}
-                href={social.href}
-                className="w-9 h-9 rounded-lg bg-secondary/50 border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/30 transition-all"
-                aria-label={social.label}
-              >
-                <social.icon className="w-4 h-4" />
-              </a>
-            ))}
+            {socialLinks.map((social) => {
+              const IconComponent = social.icon;
+              return (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  className="w-9 h-9 rounded-lg bg-secondary/50 border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/30 transition-all"
+                  aria-label={social.label}
+                >
+                  <IconComponent className="w-4 h-4" />
+                </a>
+              );
+            })}
           </div>
         </div>
 
         {/* Bottom */}
-        <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
+        <div className="mt-8 sm:mt-10 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-muted-foreground">
           <span>© 2025 X Matrics. All rights reserved.</span>
           <div className="flex items-center gap-6">
             <a href="#" className="hover:text-foreground transition-colors">Privacy</a>

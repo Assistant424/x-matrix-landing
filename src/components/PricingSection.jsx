@@ -64,25 +64,25 @@ const PricingSection = () => {
   ];
 
   return (
-    <section id="pricing" className="py-24 bg-background">
-      <div className="container mx-auto px-6">
+    <section id="pricing" className="py-16 sm:py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Simple, Transparent{" "}
             <span className="text-gradient-gold">Pricing</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base sm:text-lg">
             No hidden fees. No surprises. Just results.
           </p>
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative rounded-2xl p-8 transition-all duration-500 hover:transform hover:-translate-y-2 ${
+              className={`relative rounded-2xl p-6 sm:p-8 transition-all duration-500 hover:transform hover:-translate-y-2 ${
                 plan.popular
                   ? "card-gradient border-2 border-primary shadow-[0_0_40px_hsl(var(--gold)/0.2)]"
                   : "card-gradient border border-border hover:border-primary/30"
@@ -91,24 +91,24 @@ const PricingSection = () => {
               {/* Popular Badge */}
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold whitespace-nowrap">
                     Most Chosen
                   </span>
                 </div>
               )}
 
               {/* Plan Header */}
-              <div className="text-center mb-8">
-                <h3 className="text-xl font-bold text-foreground mb-2">
+              <div className="text-center mb-6 sm:mb-8">
+                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2">
                   {plan.name}
                 </h3>
                 <div className="flex items-baseline justify-center gap-1">
-                  <span className="text-4xl md:text-5xl font-black text-gradient-gold">
+                  <span className="text-3xl sm:text-4xl md:text-5xl font-black text-gradient-gold">
                     {plan.price}
                   </span>
                   <span className="text-muted-foreground">{plan.period}</span>
                 </div>
-                <p className="text-muted-foreground text-sm mt-2">
+                <p className="text-muted-foreground text-xs sm:text-sm mt-2">
                   {plan.description}
                 </p>
                 <p className="text-xs text-primary/80 mt-2 font-medium">
@@ -117,11 +117,11 @@ const PricingSection = () => {
               </div>
 
               {/* Features */}
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground text-sm">
+                    <Check className="w-4 sm:w-5 h-4 sm:h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-muted-foreground text-xs sm:text-sm">
                       {feature}
                     </span>
                   </li>
@@ -133,8 +133,11 @@ const PricingSection = () => {
                 variant={plan.popular ? "gold" : "outline"}
                 className="w-full"
                 size="lg"
+                asChild
               >
-                {plan.name === "Enterprise" ? "Book a Call" : "Get Started"}
+                <a href="#contact">
+                  {plan.name === "Enterprise" ? "Book a Call" : "Get Started"}
+                </a>
               </Button>
             </div>
           ))}
