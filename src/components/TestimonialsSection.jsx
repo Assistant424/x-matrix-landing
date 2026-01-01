@@ -37,47 +37,47 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-background">
-      <div className="container mx-auto px-6">
+    <section className="py-16 sm:py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             What Our <span className="text-gradient-gold">Clients</span> Say
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-base sm:text-lg">
             Don't just take our word for it.
           </p>
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 max-w-5xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="p-8 rounded-2xl card-gradient border border-border hover:border-primary/30 transition-all duration-300"
+              className="p-6 sm:p-8 rounded-2xl card-gradient border border-border hover:border-primary/30 transition-all duration-300"
             >
               {/* Stars */}
-              <div className="flex gap-1 mb-6">
+              <div className="flex gap-1 mb-4 sm:mb-6">
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
-                    className="w-5 h-5 fill-primary text-primary"
+                    className="w-4 sm:w-5 h-4 sm:h-5 fill-primary text-primary"
                   />
                 ))}
               </div>
 
               {/* Quote */}
-              <blockquote className="text-foreground text-lg leading-relaxed mb-6">
+              <blockquote className="text-foreground text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
                 "{testimonial.quote}"
               </blockquote>
 
               {/* Author */}
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between flex-wrap gap-3">
                 <div>
-                  <div className="font-bold text-foreground">
+                  <div className="font-bold text-foreground text-sm sm:text-base">
                     {testimonial.author}
                   </div>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="text-xs sm:text-sm text-muted-foreground">
                     {testimonial.role}
                   </div>
                   <div className="text-xs text-muted-foreground/70 mt-0.5">
@@ -85,7 +85,7 @@ const TestimonialsSection = () => {
                   </div>
                 </div>
                 <div className="text-right">
-                  <div className="text-lg font-bold text-gradient-gold">
+                  <div className="text-base sm:text-lg font-bold text-gradient-gold">
                     {testimonial.metric}
                   </div>
                 </div>
